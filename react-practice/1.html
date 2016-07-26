@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../react-demos/build/react.js"></script>
+    <script src="../react-demos/build/react-dom.js"></script>
+    <script src="../react-demos/build/browser.min.js"></script>
+    <style>
+        .hello{
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    var Hello = React.createClass({
+        render:function () {
+            return <h1 className="hello">Hello {this.props.name} {this.props.class}</h1>
+        }
+    });
+    ReactDOM.render(
+            <Hello name="World" class="nihao"/>,
+            document.getElementById('example')
+    );
+</script>
+</body>
+</html>

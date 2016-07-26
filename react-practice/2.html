@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<div id="message" align="center">
+    <h2>Click me! Number of clicks:<span class="num">0</span></h2>
+</div>
+<script src="jquery-2.2.3.min.js"></script>
+<script>
+//    $('h2').on('click',function () {
+//        var number = parseInt($('.num').text())+1;
+//        $('.num').text(number);
+//    });
+    var number=0;
+    setInterval(function () {
+        number = number +0.1;
+        console.log(number);
+        $('.num').text(number.toFixed(1));
+    },100);
+</script>
+</body>
+</html>
